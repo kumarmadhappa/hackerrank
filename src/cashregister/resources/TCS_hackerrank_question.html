@@ -1,0 +1,105 @@
+<div class="candidate-rich-text"><div id="tgci4jjbjh-instruction"><p>Create&nbsp;a <strong>cash register</strong> for a fruit store that enables to complete&nbsp;purchases&nbsp;(applying&nbsp;offers, if any), etc.<br>
+&nbsp;</p>
+
+<p><strong>Project Setup</strong></p>
+
+<p><br>
+<strong>Classes:</strong>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Register: </strong>Singleton class&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Maintains a list of items for sale&nbsp;and their prices.</li>
+	<li>Initiates and completes a checkout by returning a bill.</li>
+</ul>
+
+<p>&nbsp;<br>
+<strong>Methods:</strong></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Void startCheckout()</li>
+	<li>Bill finishCheckout()&nbsp;</li>
+	<li>Double scanItem (String item) returns InvalidItemScan.</li>
+	<li>Register getInstance() returns the singleton instance of a register.</li>
+	<li>Void addItems (Map itemPriceMap)&nbsp;</li>
+</ul>
+
+<p>&nbsp;<br>
+<em><strong>Notes:&nbsp;</strong></em></p>
+
+<ul>
+	<li><em>Checkout begins when a customer brings items to the billing desk and ends when the customer leaves the store after paying.</em></li>
+	<li><em>During&nbsp;checkout, the order in which items are scanned does not matter.</em></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>The register contains&nbsp;the list of items and their prices.&nbsp;In this exercise, the list of items and their prices are:</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Item&nbsp; &nbsp; &nbsp; | Price</strong><br>
+-------------------------<br>
+Apple&nbsp; &nbsp; | 2.0<br>
+-------------------------<br>
+Orange&nbsp; | 1.5<br>
+-------------------------<br>
+Mango&nbsp; | 1.2<br>
+-------------------------<br>
+Grapes&nbsp; &nbsp;| 1.0<br>
+-------------------------<br>
+&nbsp;&nbsp;<br>
+<strong>Bill:&nbsp;</strong></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>List of items purchased by the&nbsp;customer, and the price paid.</li>
+	<li>ArrayList of items purchased by the customer.</li>
+	<li>totalPrice paid by the customer.</li>
+</ul>
+
+<p>&nbsp;<br>
+<strong>Methods:</strong></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Double getTotalBill() returns&nbsp;the total price a customer has to pay.</li>
+	<li>Use addToBill (double price)&nbsp;to add to the bill.</li>
+</ul>
+
+<p>&nbsp;<br>
+<strong>Exceptions:</strong></p>
+
+<p>&nbsp;</p>
+
+<p>InvalidItemScan- The <strong>Register</strong> method returns this exception in certain cases. For example,&nbsp;when an&nbsp;item that is not part of the store inventory is scanned by the register.</p>
+
+<p><br>
+<em><strong>Notes:</strong></em></p>
+
+<ul>
+	<li><em>The Register class is a singleton class.</em></li>
+	<li><em>Register&nbsp;getInstance() returns the singleton instance of a register.</em></li>
+	<li><em>Use the&nbsp;getInstance() method to create a&nbsp;Register object.</em></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Input:</strong></p>
+
+<p>java Register "apples" 30 "orange" 10 "mango" 20</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Output:</strong></p>
+
+<p>99.0</p>
+</div></div>
