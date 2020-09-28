@@ -1,3 +1,6 @@
+package TransactionsByLocationAndIP;
+
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -14,8 +17,6 @@ import java.net.URL;
 import java.util.StringTokenizer;
 
 import com.google.gson.Gson;
-
-
 
 class Transaction
 {
