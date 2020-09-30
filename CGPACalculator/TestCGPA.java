@@ -5,8 +5,12 @@ public class TestCGPA
 	public static void main(String[] args)
 	{
 		Aided a = new Aided();
-		String res=a.result("100 5,100 5,100 5|1,100,5|0,100,5");
+		//String res=a.result("100 5,100 5,100 5|1,100,5|0,100,5");
+		String res=a.result("67 4,34 2,54 5,100 2|1,100,5|0,100,5");
 		System.out.println(res);
+		System.out.println(res.hashCode());
+		//System.out.println("5.64".hashCode());
+		
 		
 		SelfFinance s = new SelfFinance();
 		res=s.result("100 5,100 5,53 5,76 3|0,100,5");

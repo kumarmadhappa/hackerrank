@@ -1,3 +1,4 @@
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 public abstract class Student
@@ -62,6 +63,7 @@ public abstract class Student
 		double res = (marks - markLow) * gradient + gradeLow;
 
 		DecimalFormat df = new DecimalFormat("#.#");
+		df.setRoundingMode(RoundingMode.FLOOR);
 		res = Double.parseDouble(df.format(res));
 		// System.out.println("Marks-"+marks+";grade-"+res+";"+Double.parseDouble(df.format(res)));
 		if (res > gradeHigh)
@@ -79,7 +81,7 @@ public abstract class Student
 		{
 			String[] marks = subjectMarks[i].split(" ");
 			totalMarksCredit += getGradePoint(marks[0]) * Integer.parseInt(marks[1]);
-			// totalCredit+=Integer.parseInt(marks[1]);
+			//totalCredit+=Integer.parseInt(marks[1]);
 			totalCredit += CREDIT_MAX_VALUE;
 		}
 	}
@@ -89,7 +91,7 @@ public abstract class Student
 		if (otherMarks[0].equals("1"))
 		{
 			totalMarksCredit += getGradePoint(otherMarks[1]) * Integer.parseInt(otherMarks[2]);
-			// totalCredit+=Integer.parseInt(otherMarks[2]);
+			//totalCredit+=Integer.parseInt(otherMarks[2]);
 			totalCredit += CREDIT_MAX_VALUE;
 		}
 	}
@@ -99,6 +101,7 @@ public abstract class Student
 
 		double cgpa = totalMarksCredit / totalCredit;
 		String value = String.format("%.2f", cgpa);
+		
 		return value;
 
 	}
