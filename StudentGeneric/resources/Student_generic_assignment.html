@@ -1,0 +1,194 @@
+<div id="main-splitpane-left" class="base-question__left-pane"><section><h1 class="question-view__title">1. Generic Class</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="f5o3atpoan5-instruction"><p align="center"><strong>Getting Student Information using Generic Class</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>A&nbsp;<strong>generic type</strong>&nbsp;is a class or interface that is parameterized over types. In this challenge, you have to create two generic classes for an&nbsp;<strong>Array List</strong>. There are three classes,&nbsp;<strong>StudentClass</strong>, <strong>StudentList</strong>, and <strong>ScoreList</strong>.</p>
+
+<p>&nbsp;</p>
+
+<p>In <strong>StudentClass</strong>, there is a <strong>getQuery()</strong> function that contains the&nbsp;input data.&nbsp;In <strong>getQuery (String studentData, String query)</strong>, <strong>studentData</strong> is a dataset that differs based on the query type.&nbsp;Q<strong>uery</strong> is the conditional string to perform an operation.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>There are five types of queries:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Query Type 1:</strong></p>
+
+<p>Find student names beginning&nbsp;with a particular letter. &nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Query Type 2:</strong></p>
+
+<p>Find student's having a particular blood group.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p><strong>Query Type 3:</strong></p>
+
+<p>Find the number of students who scored higher than the specified threshold score.</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+
+<p><strong>Query Type 4:</strong></p>
+
+<p>Find the average of student marks.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p><strong>Query Type 5:</strong></p>
+
+<p>Find the average of student CGPA.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><em><strong>Note</strong></em><b><em>:</em>&nbsp;</b><em>In&nbsp;<strong>studentData</strong><b>,&nbsp;</b>student data is separated by space (“ ”). In a&nbsp;<b>query</b>&nbsp;string, query data is separated by comma (“,”). The first character refers to the query type, and the second character refers to the conditional string (based&nbsp;on the query type).</em></p>
+
+<p>&nbsp;</p>
+
+<p><strong>For Query Type 1</strong>:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample input:</strong></p>
+
+<p><strong>studentData</strong>&nbsp;= Raja Ravi Vinay Rahul Arun&nbsp;</p>
+
+<p><strong>query</strong><b> =&nbsp;</b>1,r</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample output:</strong></p>
+
+<p>Raja</p>
+
+<p>Ravi</p>
+
+<p>Rahul&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><em><strong>Note:</strong> The output for query type 1 should end with a new line character.</em></p>
+
+<p>&nbsp;</p>
+
+<p><strong>For Query Type 2</strong>:</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample input:</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>studentData</strong>&nbsp;= Raja Ravi Vinay Rahul Arun</p>
+
+<p><strong>query</strong><b> =&nbsp;</b>2,B- AB- B+ O+ B+,B+</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample output :</strong></p>
+
+<p>Vinay</p>
+
+<p>Arun</p>
+
+<p>&nbsp;</p>
+
+<p><em><strong>Note:</strong> The output for query type 2 should end with a new line character.</em></p>
+
+<p>&nbsp;</p>
+
+<p><strong>For Query Type 3</strong>:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample input:</strong></p>
+
+<p><strong>studentData</strong>&nbsp;= 96 78 93 45 90 42 69&nbsp;</p>
+
+<p><b><em>query</em> =&nbsp;</b>3,90</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample output:</strong></p>
+
+<p>3 students scored 90 above</p>
+
+<p>&nbsp;</p>
+
+<p><strong>For Query Type 4</strong>:&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample input:</strong></p>
+
+<p><strong>studentData</strong>&nbsp;= 96 78 93 45 90 42 69&nbsp;</p>
+
+<p><strong>query</strong><b> =&nbsp;</b>4</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample output:</strong></p>
+
+<p>73.29</p>
+
+<p>&nbsp;</p>
+
+<p><strong>For Query Type 5:</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample input:</strong></p>
+
+<p><strong>studentData</strong>&nbsp;= 5.6 6.7 8.9 5.8&nbsp;</p>
+
+<p><strong>query</strong><b> =&nbsp;</b>5</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample output:</strong></p>
+
+<p>6.75</p>
+
+<p>&nbsp;</p>
+
+<p>In the&nbsp;<strong>StudentList</strong> class, you have to implement the functionalities for the first three types of queries using an Array List. Type should be generic. Create 6 methods.</p>
+
+<p>&nbsp;</p>
+
+<p>In the&nbsp;<strong>ScoreList</strong> Class, you have to implement the functionalities of the next two types of queries using an Array List.&nbsp;Type should be generic. It must extend&nbsp;from the Numbers class, and&nbsp;restrict&nbsp;the type (int, float, double, and long).&nbsp;Create 4 methods.</p>
+
+<p>&nbsp;</p>
+
+<p>The first three methods are common for both classes:&nbsp;&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp; &nbsp;1. void addElement(Type) – Must reflect the <strong>add()</strong> function of the Array List.</p>
+
+<p>&nbsp; &nbsp;2. void removeElement(Type) - Must reflect the <strong>remove()</strong> function of the Array List.</p>
+
+<p>&nbsp; &nbsp;3. Type getElement(int) – Must reflect the <strong>get()</strong> function of the Array List.</p>
+
+<p>&nbsp;</p>
+
+<p>In <strong>StudentList</strong>,</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp; 4. beginsWith(String) – Must return the names of students starting with the specified letter, for the names in the list.</p>
+
+<p>&nbsp; 5. bloodGroupOf(String[],String) – Must return the names of students with the specified&nbsp;blood group, for the names in the list.</p>
+
+<p>&nbsp; 6. int thresholdScore(int) – Must return the count of the number of students whose score&nbsp;is higher than the specified threshold score, for the scores in the list.</p>
+
+<p>&nbsp;</p>
+
+<p>In <strong>ScoreList</strong>,</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;4. double averageValues() – Must return the average of the set of values in the list.</p>
+</div></div></section><section class="projects-git-instructions"><h3 class="projects-git-instructions__heading">Git Instructions</h3><p class="projects-git-instructions__subheading">Use the following commands to work with this project</p><div class="projects-git-instructions__commands"><div class="d-flex flex-column projects-git-instructions__commands-item" data-automation="project-command-test"><p class="projects-git-instructions__commands-item-label">test <button class="ui-btn ui-btn-normal ui-btn-plain projects-git-instructions__commands-item-copy-btn"><div class="ui-content align-icon-right"><span class="ui-text">Copy</span></div></button></p><p class="projects-git-instructions__commands-item-command-text">cd StudentGenericClass; mvn compile test; cat target/surefire-reports/*.xml</p></div><div class="d-flex flex-column projects-git-instructions__commands-item" data-automation="project-command-install"><p class="projects-git-instructions__commands-item-label">install <button class="ui-btn ui-btn-normal ui-btn-plain projects-git-instructions__commands-item-copy-btn"><div class="ui-content align-icon-right"><span class="ui-text">Copy</span></div></button></p><p class="projects-git-instructions__commands-item-command-text">bash install.sh</p></div></div></section></div>
