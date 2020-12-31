@@ -1,0 +1,145 @@
+<div id="main-splitpane-left" class="base-question__left-pane"><section><h1 class="question-view__title">1. HashMap Library</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="3d6di3qierl-instruction"><p align="center"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;">COLLECTIONS IN JAVA </span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;">–</span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;"> HASHMAP </span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;">–</span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;"> LIBRARY</span></font></font></font></font></span></strong></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">In a library, there is a set of books from which some are borrowed by the users. You have to perform certain&nbsp;operations with respect to the query using <strong>hashmap</strong> in Java. </span></font></font></font></font></span></span></p>
+
+<p align="left"><br>
+<span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">You will be given three datasets. The first one (<strong>booksInLibrary</strong>) contains </span></span><strong><span style="background:transparent;">book id</span></strong><span style="font-weight:normal;"><span style="background:transparent;">,&nbsp;</span></span><strong><span style="background:transparent;">book name</span></strong></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">, and&nbsp;</span></span></font></font></font></font><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">book author</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">. The second (<strong>borrowedUsers</strong>) contains </span></span></font></font></font></font><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">book id</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"> and </span></span></font></font></font></font><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">user id</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">. The third (<strong>query</strong>) contains the </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">query</span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"> to perform. These datasets are of string type&nbsp;and are passed in&nbsp;the&nbsp;</span></span></font></font></font></font><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">getQuery()</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"> function. Split the string and get the respective parameters.</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">You have to implement the following three functions in class library: </span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<ul>
+	<li>
+	<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">createLibraryMap(String booksInLibrary)</span></font></font></font></font></span></span></p>
+	</li>
+	<li>
+	<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">createUserMap(String borrowedUsers)</span></font></font></font></font></span></span></p>
+	</li>
+	<li>
+	<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">getQuery(String booksInLibrary,String borrowedUsers,String query)</span></font></font></font></font></span></span></p>
+	</li>
+</ul>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Query Type 1:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check the availability of a book using its book id. The input should be the <strong>book id</strong>. If the book is present, the&nbsp;result should be "It is available\nAuthor is &lt;author name&gt;\n".&nbsp;</span></font></font></font></font></span></span><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">If the book is not present and borrowed by somebody else, the result should be "No Stock\nIt is owned by &lt;user id&gt;\n".</span></font></font></font></font></span></span></p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Query Type 2:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the books borrowed by a specific user by using their&nbsp;user id. The input should be <strong>user id</strong>, and the output should be "&lt;book id&gt; &lt;bookname&gt;\n.... and so on" .</span></span></font></font></font></font></span></p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Query Type 3:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There is more than one book for a given book name. Return the number of books present and borrowed by a user for a specific book name. The input should be the&nbsp;<strong>book name</strong>. The result should be "&lt;no. of books borrowed&gt; out\n&lt;no. of books present&gt; in\n".</span></span></font></font></font></font></span></p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Query Type 4:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the book names of a specific author. The input should be the&nbsp;<strong>book author</strong>. The&nbsp;output should be "&lt;book name&gt;\n.....and so on".</span></span></font></font></font></font></span></p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Query Type 5:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return&nbsp;the book names based on the given keyword. The input should be the search keyword. The&nbsp;result should be "&lt;book id&gt; &lt;book name&gt;\n".</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample Input</span></font></font></font></font></span></strong></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">booksInLibrary</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"> = 125,C programming,Brian W. Kernighan|546,Java programming,James Gosling|897,Data Structure,Adam Drozdek|265,Data Structure,Adam Drozdek|234,The Java Language Specification,James Gosling</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">125 - book id , C programming - book name , Brian W. Kernighan - author name</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">borrowedUsers</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"> = 125,101|897,104</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">125 - book id , 101 - user id.</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><em><strong><span style="background:transparent;">Note</span></strong></em><b><span style="background:transparent;">: </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">In </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">booksInLibrary, </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">books are separated by "|", book details (book id, book name, author name) are separated by ",". In </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">borrowedUsers, </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">the users are separated by "|", user details (book id, user id) are separated by ",". In a </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">query</span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"> string, the first character refers to the query type, and the second character refers to the conditional string depending on the query type. </span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">For query type 1</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">: </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">query = </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">1,546 (546 - book id)</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample output:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">No Stock</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">It is owned by 101</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">For query type 2</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">: </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">query = </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">2,101 (101 - user id)</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample output:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">546 Java programming</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">125 C programming</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">For query type 3</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">: </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">query = </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">3,Data Structure (Data Structure - book name)</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample output:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">1 out</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">1 in</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><strong><span style="background:transparent;">For query type 4</span></strong><b><span style="background:transparent;">: </span></b><span style="background:transparent;">query</span><b><span style="background:transparent;"> = </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">4,James Gosling (James Gosling - author name)</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample output</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Java programming</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">The Java Language Specification</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><strong><span style="background:transparent;">For query type 5:</span></strong><b><span style="background:transparent;"> query = </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">5,java (java - search string)</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample output:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">546 Java programming</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">234 The Java Language Specification</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">In </span></span><strong><span style="background:transparent;">createLibraryMap(String booksInLibrary)</span></strong><span style="font-weight:normal;"><span style="background:transparent;">, you have to return the hashmap of the book details. The&nbsp;key should be <strong>book id</strong>, and the value should be an object which holds the book name and author.</span></span></font></font></font></font></span></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">In </span></span><strong><span style="background:transparent;">createUserMap(String borrowedUsers)</span></strong><span style="font-weight:normal;"><span style="background:transparent;">, you have to return the hashmap of the user details. The&nbsp;key should be <strong>book id</strong>, and the value should be the <strong>user id</strong>. </span></span></font></font></font></font></span></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">In </span></span><strong><span style="background:transparent;">getQuery(String booksInLibrary,String borrowedUsers,String query)</span></strong><span style="font-weight:normal;"><span style="background:transparent;">, you have to return&nbsp;the result based on&nbsp;the query.</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+</div></div></section></div>

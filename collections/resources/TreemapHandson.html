@@ -1,0 +1,128 @@
+<div id="main-splitpane-left" class="base-question__left-pane"><section><h1 class="question-view__title">1. TreeMap Cricket</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="97e9erie7rg-instruction"><p align="center"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;">COLLECTIONS IN JAVA </span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;">–</span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;"> TREEMAP </span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;">–</span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 16pt;"><span style="background:transparent;"> CRICKET</span></font></font></font></font></span></strong></p>
+
+<p align="center">&nbsp;</p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">There is a set of cricket player details for matches. You have to perform certain operations with respect to the query using TreeMap in Java. </span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">You will be given two datasets. For the query types 1 and 2, the first parameter (<strong>cricketDataset</strong>) contains </span></span><strong><span style="background:transparent;">position </span></strong><span style="background:transparent;">of the player in the match</span><b><span style="background:transparent;">, </span></b><strong><span style="background:transparent;">name</span></strong><b><span style="background:transparent;"> of the player and the </span></b><strong><span style="background:transparent;">score</span></strong><b><span style="background:transparent;"> of the player in a match</span></b><span style="font-weight:normal;"><span style="background:transparent;">. For the query type 3, the first parameter (<strong>cricketDataset</strong>) contains the&nbsp;</span></span><strong><span style="background:transparent;">number of matches</span></strong><span style="font-weight:normal;"><span style="background:transparent;">. The second parameter (<strong>query</strong>) contains the </span></span><b><span style="background:transparent;">query</span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"> to perform. These datasets are of string type and are&nbsp;passed using the&nbsp;</span></span></font></font></font></font><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">getQuery()</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"> function. Split the string and to get the&nbsp;respective parameters.</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">You have to implement the following three functions in class library: </span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<ul>
+	<li>
+	<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">createPlayerPositionMap(String cricketDataset)</span></font></font></font></font></span></span></p>
+	</li>
+	<li>
+	<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">createPlayerScoreMap(String cricketDataset)</span></font></font></font></font></span></span></p>
+	</li>
+	<li>
+	<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">createMatchesMap(String cricketDataset)</span></font></font></font></font></span></span></p>
+	</li>
+	<li>
+	<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">getQuery(String cricketDataset,String query)</span></font></font></font></font></span></span></p>
+	</li>
+</ul>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Query Type 1:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the list of players with position and their names from starting position to end position. Input should be start position and end position. The result should be "&lt;player position&gt; &lt;player name&gt;\n...and so on".</span></font></font></font></font></span></span></p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Query Type 2:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the list of players with position and their names more than specified threshold score. Input should be threshold score. Your result should be "&lt;player position&gt; &lt;player name&gt;\n...and so on".</span></font></font></font></font></span></span></p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Query Type 3:</span></font></font></font></font></span></strong></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the efficient opener of all the matches depends upon the average score score of a player by calculate the total score of all matches divided by number of matches played. Your result should be "The Efficient Opener is &lt;player name&gt;".</span></span></font></font></font></font></span></p>
+
+<p align="left"><em><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"><strong>Note:</strong> The opener is the player who played first position in a match.</span></span></font></font></font></font></span></em></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample Input:</span></font></font></font></font></span></strong></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><strong><span style="background:transparent;">cricketDataset for query type 1 and 2</span></strong><b><span style="background:transparent;">&nbsp; &nbsp;=&nbsp;</span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;">&nbsp;&nbsp;</font></font></font></font></span><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">3,Dhoni,120|1,Virat,103|5,Jadeja,40|2,Rohit,70|4,Pandya,30</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">3 - position of the player, Dhoni - name of the player, 120 - score of the player</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><em><strong><span style="background:transparent;">Note</span></strong></em><b><span style="background:transparent;">: </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">In </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">cricketDataset, </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">players are seperated by "|", player details(player's position, name and score) are seperated by ",". In a </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">query</span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;"> string, the first character refers the query type, the second character refers the conditional string depends on the query type. For query</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Type 1</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">: </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">query = </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">1 3 5 (3 - start position, 5 - end position)</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample output:</span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"> </font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">3 Dhoni</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">4 Pandya</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">5 Jadeja</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Type 2</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">: </span></span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">query = </span></b></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">2 50 (50 - threshold score)</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample output :</span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"> </font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">1 Virat</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">2 Rohit</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">3 Dhoni</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><strong><span style="background:transparent;">cricketDataset for query type 3</span></strong><b><span style="background:transparent;"> =&nbsp; </span></b></font></font></font></font></span><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size:14pt;"><span style="background:transparent;">3,Rohit,100|2,Virat,56|1,Dhoni,150\n3,Rahul,90|2,Virat,100|1,Rohit,99\n1,Rahul,50|2,Virat,64|3,Rohit,78\n1,Dhoni,95|2,Virat,30|3,Rohit,45\n3,Jadeja,43|2,Virat,54|1,Rohit,40|4,Dhoni,59</span></font></font></font></font></span></span><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><b><span style="background:transparent;">&nbsp;&nbsp;</span></b></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size:14pt;"><strong><span style="background:transparent;">Calculation:&nbsp;</span></strong></font></font></font></font></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Dhoni - 150+95/2 - 122.5</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Rohit - 95+78+40/3 - 71</span></font></font></font></font></span></span></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Rahul - 50/1 - 50</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><strong><font color="#000000"><font><font size="4"><font style="font-size:14pt;"><span style="background:transparent;">Type 3</span></font></font></font></font></strong><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">:&nbsp;</span></span><b><span style="background:transparent;">query = </span></b><span style="font-weight:normal;"><span style="background:transparent;">3 (only type of the query will be given)</span></span></font></font></font></font></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><strong><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">Sample output:</span></font></font></font></font><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"> </font></font></font></font></span></strong></p>
+
+<p align="left"><span style="font-weight:normal;"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="background:transparent;">The Efficient Opener is Dhoni</span></font></font></font></font></span></span></p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left">&nbsp;</p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">Use&nbsp;</span></span><strong><span style="background:transparent;">createPlayerPositionMap(String cricketDataset)</span></strong><span style="font-weight:normal;"><span style="background:transparent;">&nbsp;to return the TreeMap of query type 1. The&nbsp;key should be the position of the player, and the value should be the name of the player.</span></span></font></font></font></font></span></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">Use </span></span><strong><span style="background:transparent;">createPlayerScoreMap(String cricketDataset)</span></strong><span style="font-weight:normal;"><span style="background:transparent;">&nbsp;to return the TreeMap of query type 2. The key should be the name of the player, and the value should be the score of the player.</span></span></font></font></font></font></span></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">Use&nbsp;</span></span><strong><span style="background:transparent;">createMatchesMap(String cricketDataset)</span></strong><span style="font-weight:normal;"><span style="background:transparent;">&nbsp;to return the TreeMap of query type 3.</span></span></font></font></font></font></span></p>
+
+<p align="left"><span style="line-height:100%;"><font color="#000000"><font><font size="4"><font style="font-size: 14pt;"><span style="font-weight:normal;"><span style="background:transparent;">Use&nbsp;</span></span><strong><span style="background:transparent;">getQuery(String cricketDataset,String query)&nbsp;</span></strong><span style="font-weight:normal;"><span style="background:transparent;">to return the result string with respect to the query type.</span></span></font></font></font></font></span></p>
+
+</div></div></section></div>
