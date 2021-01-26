@@ -1,0 +1,139 @@
+<div id="main-splitpane-left" class="base-question__left-pane"><section><h1 class="question-view__title">1. ArrayList in Java</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="2ja2s12mjik-instruction"><p>A bus has a seating capacity of n. The fare depends on the capacity n and the number of passengers on the bus. For example, if there is less than or equal to 25% of passengers currently on the bus, then they will be charged a traveling fare of n+n*0.6.&nbsp;If the passenger count is greater than 25% and less&nbsp;than or equal to 50% of the capacity of the bus, then they will be charged a fare of n+n*0.3. If the number of passengers on the bus is more than 50% of the seating capacity of the bus, then they will be charged a fare of n (If the value on dividing n by 2 or 4 gives a remainder other than 0, then <strong>convert it into its ceiling value</strong>). You will be given the seating capacity, the number of stops during the trip, an arraylist of strings representing the passenger's ID prefixed with a "+" or a "-" sign denoting whether the passenger has got on or out&nbsp;of the bus, respectively, and a query q.</p>
+
+<p>&nbsp;</p>
+
+<p>You&nbsp;have to write a program to get the output depending upon the query type. The following&nbsp;are the five type of queries:</p>
+
+<ul>
+	<li>Query type 1 (1): You have to determine the number of&nbsp;passengers who have got&nbsp;on and out of the bus during that trip.
+	<ul>
+		<li>Example output: "(number of passengers who have got on&nbsp;the bus) passengers got on&nbsp;the bus and (number of passengers who have got out of the bus) passengers got out of the bus"</li>
+	</ul>
+	</li>
+	<li>Query type 2 (2): You have to determine the number of passengers who have traveled with a fare of n+n*0.6, n+n*0.3, and n.
+	<ul>
+		<li>Example output: "(number of passengers who have spent n+n*0.6 on their fare) passengers traveled with a fare of (n+n*0.6), (number of passengers who have&nbsp;spent n+n*0.3 on their fare) passengers traveled with a fare of&nbsp;(n+n*0.3)&nbsp;and (number of passengers who have spent n as their fare) passengers traveled with a fare of (n)"</li>
+	</ul>
+	</li>
+	<li>Query type 3 (3, Passenger id): You have to determine how much a particular passenger with the given passenger id has spent during the trip&nbsp;(Note: The same passenger can get on the bus more than once).
+	<ul>
+		<li>Example output: "Passenger (Passenger id) spent a total fare of (total fare spent by the passenger during the trip)"</li>
+	</ul>
+	</li>
+	<li>Query type 4 (4, Passenger id): You have to determine how many times a particular passenger with the given passenger id has got on&nbsp;the bus during the trip.
+	<ul>
+		<li>Example output: "Passenger (Passenger id) has got on the bus for (number&nbsp;of times the passenger has got on&nbsp;the bus) times"</li>
+	</ul>
+	</li>
+	<li>Query type 5 (5, Passenger id): You have to determine whether the given passenger is on the bus or not at the end of the trip
+	<ul>
+		<li>Example output: "Passenger (Passenger id) was (inside/not inside&nbsp;depending upon whether the passenger is on the bus or not at the end of the trip) the bus at the&nbsp;end of the&nbsp;trip"</li>
+	</ul>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Note</strong>: In the example outputs, the values enclosed within the parentheses should be replaced with the respective calculated values.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Input Specifications:</strong></p>
+
+<ul>
+	<li>&nbsp;&nbsp;&nbsp; The first line of the input consists of an integer n describing the seating capacity of the bus.</li>
+	<li>&nbsp;&nbsp;&nbsp; The second line of the input consists of an integer x describing the number of stops during the trip.</li>
+	<li>&nbsp;&nbsp;&nbsp; The next x lines of input consist of the strings with the list of passengers who have got on and out of&nbsp;the bus.</li>
+	<li>&nbsp;&nbsp;&nbsp; The last line of the input is an integer q describing the query (query types 3, 4, and 5 have a comma and a space separating the values).</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Output Specifications:</strong><br>
+&nbsp;&nbsp;&nbsp; You should print the output depending upon the query given.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Input 1:</strong><br>
+10<br>
+4<br>
++2501 +2502 +2503 +2504<br>
+-2501 -2504 +2505 +2506 +2507 +2509<br>
++2501 +2511 -2502 -2505<br>
++2513 -2507 -2503 -2511 -2509<br>
+2</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Output 1:</strong></p>
+
+<p>1 passengers traveled with a fare of 16.0, 4 passengers traveled with a fare of&nbsp;13.0&nbsp;and 6 passengers traveled with a fare of 10.0</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Explanation:</strong></p>
+
+<p>&nbsp;</p>
+
+<p><img height="306" src="https://hrcdn.net/s3_pub/istreet-assets/DtizKgBAOpyX1V6Qs6NbWA/Capture1.PNG" width="671"></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:18px;"><span style="line-height:115%;"><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;">Therefore, in&nbsp;total, 1&nbsp;passenger&nbsp;spent a fare of 16, 4 spent a fare of 13 and 6 passengers paid a fare of 10.</span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Input 2:</strong><br>
+15<br>
+6<br>
++100 +101 +102 +103 +104 +105<br>
++106 +107 +108 -101 -104 -105 -103 -102<br>
++101 +109 +110 +111 -106 -100<br>
++112 +113 -101 +114 -109 -107 -110 -111<br>
++101 -112 -113<br>
++115 +116 -101 +112<br>
+3, 101</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Output 2:</strong><br>
+Passenger 101 spent a total fare of 63.0</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Explanation:</strong></p>
+
+<p>&nbsp;</p>
+
+<p><img src="https://hrcdn.net/s3_pub/istreet-assets/cQ6uRhp_n4syUxyf-iT87A/Capture2.PNG"></p>
+
+<p><br>
+The passenger with id 101 has got on&nbsp;the bus thrice(highlighted in the table). The number of passengers on the bus when the passenger has got on&nbsp;the bus for the first and the second time&nbsp;is greater than 25% of the capacity but less&nbsp;than half of the capacity. Hence, the passenger has&nbsp;spent 19.5 each time. The last time when&nbsp;passenger 101 has got on the bus, there is less&nbsp;than 25% of the capacity of passengers on the bus, so the passenger has&nbsp;spent 24.0. In total, the&nbsp;passenger has spent&nbsp;63.0 (19.5+19.5+24.0).</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Input 3:</strong><br>
+15<br>
+6<br>
++100 +101 +102 +103 +104 +105<br>
++106 +107 +108 -101 -104 -105 -103 -102<br>
++101 +109 +110 +111 -106 -100<br>
++112 +113 -101 +114 -109 -107 -110 -111<br>
++101 -112 -113<br>
++115 +116 -101 +112<br>
+5, 101</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Output 3:</strong><br>
+Passenger 101 was not inside the bus at the end of the trip</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Explanation:</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Passenger 101 was not inside the bus at the sixth stop as the last symbol associated with the&nbsp;id is -.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Note</strong>: You should use an <strong>ArrayList </strong>of the given class type<strong> Passenger&nbsp;</strong>to store the user id and the fare.</p>
+</div></div></section></div>
