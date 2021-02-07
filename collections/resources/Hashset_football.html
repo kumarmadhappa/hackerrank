@@ -1,0 +1,44 @@
+<div id="main-splitpane-left" class="base-question__left-pane"><section><h1 class="question-view__title">1. HashSet in Java</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="2ja30kbag67-instruction"><p>A football team has played n matches in a tournament. They have played each match with different sets of players (some players may have continuously&nbsp;played in some of the matches). You have to write a program to find the players who have played all the matches and the players who have played in a particular match and not in the other mentioned match.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Input Specifications:</strong></p>
+
+<ul>
+	<li>The first line consists of an integer n denoting the number of matches.</li>
+	<li>The second line consists of a single string containing the squad of players in each match, separated by a #. The players in a particular match are separated by a single space (the players for a single match may contain duplicates as well, you need to remove the&nbsp;duplicates).</li>
+	<li>The last two lines consist&nbsp;of two integers x and y, which denotes the match numbers depending on which you have to find the players who have played in match y, but&nbsp;not in x.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Output Specifications:</strong></p>
+
+<p>Output a string with the players who have played all the matches with the names separated by a single space, followed by a comma and space, and the players who have played match number y and have not played match number x with the names separated by a single space.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Input:</strong><br>
+4<br>
+Ronaldo Eder Andre Bruma Goncalo Jota Daniel Patrício Ricardo Domingos Semedo Bernardo Pereira Bruno Pizzi Paciencia Jota Daniel Patrício Eder Andre Bruma Goncalo Jota Daniel Patrício Ricardo Domingos Semedo Bernardo Pereira Bruno#Ronaldo Eder Andre Bruma Goncalo Joao Dyego Jose Nelson Pepe Mario Pereira Rafa Renato Ferro Bruma Goncalo Joao Dyego Pereira Rafa Renato Ferro Bruma Goncalo Joao Dyego#Ronaldo Eder Andre Bruma Goncalo Jota Daniel Patrício Nelson Pepe Mario Pereira Rafa Renato Ferro Daniel Patrício Daniel Patrício Nelson Pepe Mario Pereira Nelson Pepe Mario Pereira Rafa Renato Ferro Daniel Patrício#Ronaldo Eder Andre Bruma Goncalo Joao Dyego Jose Ricardo Domingos Semedo Bernardo Pereira Bruno Pizzi Andre Bruma Goncalo Joao Dyego Jose Ricardo Domingos Semedo Bernardo<br>
+2<br>
+4</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Output:</strong><br>
+Pereira Ronaldo Goncalo Eder Andre Bruma, Ricardo Pizzi Semedo Bruno Domingos Bernardo</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Explanation:</strong><br>
+Players Pereira, Ronaldo, Goncalo, Eder, Andre, and Bruma have played in all 4 matches.&nbsp;Players Ricardo, Pizzi, Semedo, Bruno, Domingos and Bernardo have played in the 4th match but not in the 2nd.</p>
+
+<p><br>
+<strong>Note:</strong></p>
+
+<ul>
+	<li>You have to use HashSet for this program.</li>
+	<li>Since you are using HashSet, the order of the names of the players in the output can be in any order.</li>
+</ul>
+</div></div></section></div>
