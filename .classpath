@@ -12,6 +12,7 @@
 	<classpathentry kind="src" path="SecretCode"/>
 	<classpathentry kind="src" path="test/java"/>
 	<classpathentry kind="src" path="collections"/>
+	<classpathentry kind="src" path="tcs_practice"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
