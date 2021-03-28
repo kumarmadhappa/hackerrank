@@ -1,0 +1,120 @@
+<div id="main-splitpane-left" class="base-question__left-pane"><section class="question-view__title-wrapper"><h1 class="question-view__title">1. Find the Card Numbers</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="ct7dsbhnjie-instruction"><p>A conversation passage between a manager and a customer in a bank will be given.</p>
+
+<p>There will be many card numbers given in the passage. You should find the card numbers of a&nbsp;given card type.<br>
+There are four types of cards. The card names and their number formats are given as follows.</p>
+
+<p>&nbsp;</p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px;">
+	<tbody>
+		<tr>
+			<td><strong>Card Name&nbsp;</strong></td>
+			<td><strong>Number Format</strong></td>
+		</tr>
+		<tr>
+			<td>Visa&nbsp;&nbsp;</td>
+			<td>Starts with 4 and can have a length of either 13 or 16</td>
+		</tr>
+		<tr>
+			<td>American Express</td>
+			<td>Starts with 34 or 37 and has a length of 15</td>
+		</tr>
+		<tr>
+			<td>Discover&nbsp;&nbsp;</td>
+			<td>Starts with 6011 or 65 and has a length of 16</td>
+		</tr>
+		<tr>
+			<td>JCB&nbsp;</td>
+			<td>Starts with 2131 or 1800 and has a length of 15 or starts with 35 and has a length of 16</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>&nbsp;</strong></p>
+
+<p>Use regex to find out the card numbers in the passage that matches the given type of card.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Input Specifications:</strong><br>
+&nbsp;&nbsp; &nbsp;The first line consists of a string.<br>
+&nbsp;&nbsp; &nbsp;The next line consists of the type of card to be searched.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Output Specifications:</strong><br>
+&nbsp;&nbsp; &nbsp;A string having the numbers that match&nbsp;the card type with the numbers separated by a space.<br>
+&nbsp;&nbsp; &nbsp;If the card type is not in the above mentioned list of cards, then print "Not a valid card type".<br>
+&nbsp;&nbsp; &nbsp;<br>
+<strong>Sample Input 1:</strong><br>
+Manager: Good morning, sir.&nbsp;How can I help you?</p>
+
+<p>Customer: Sir, the card names in my cards have got scratched, and I am unable to find their types. Would you be able to help me find the type using the&nbsp;card numbers, please?</p>
+
+<p>Manager: What are the types of cards you have, sir?</p>
+
+<p>Customer:&nbsp;I have Visa, American Express, Discover, and JCB cards.</p>
+
+<p>Manager: Okay, sir. Can I have&nbsp;your account number and mobile number?</p>
+
+<p>Customer: My account number is 1356798988878, and my mobile number is 8765465743.</p>
+
+<p>Manager: Can you&nbsp;tell me the card numbers, sir?</p>
+
+<p>Customer: The card numbers are 4769856453217, 340987687654689, 213189796876789, 6011675489757876, and 3589797987979879.</p>
+
+<p>Manager: Please wait a minute, sir.</p>
+
+<p>Customer: There are two other cards as well. The numbers are&nbsp;4654465765767878 and 6589456879087568.</p>
+
+<p>Manager: Please give me a minute, sir.<br>
+Visa</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Output 1:</strong><br>
+4769856453217 4654465765767878</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Explanation:&nbsp;</strong><br>
+&nbsp;&nbsp; &nbsp;In the given passage, we have two card numbers&nbsp;starting with 4 and having a length of 13 and 16. Hence, we print those card numbers.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Input 2:&nbsp;</strong></p>
+
+<p>Manager: Good morning, sir.&nbsp;How can I help you?</p>
+
+<p>Customer: Sir, the card names in my cards have got scratched, and I am unable to find their types. Would you be able to help me find the type using the&nbsp;card numbers, please?</p>
+
+<p>Manager: What are the types of cards you have, sir?</p>
+
+<p>Customer:&nbsp;I have&nbsp;Visa, American Express, Discover, and JCB cards.</p>
+
+<p>Manager: Okay, sir. Can I have your account number and&nbsp;mobile number?</p>
+
+<p>Customer: My account number is 1356798988878, and my mobile number is 8765465743.</p>
+
+<p>Manager: Can you&nbsp;tell me the card numbers, sir?</p>
+
+<p>Customer: The card numbers are 4769856453217, 340987687654689, 213189796876789, 6011675489757876, and 3589797987979879.</p>
+
+<p>Manager: Please wait a minute, sir.</p>
+
+<p>Customer: There are two other cards as well. The numbers are&nbsp;4654465765767878 and 6589456879087568.</p>
+
+<p>Manager: Please give me a minute, sir.</p>
+
+<p>Credit</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Sample Output 2:</strong><br>
+Not a valid card type</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Explanation:&nbsp;</strong><br>
+The given card type is Credit, which is not one of the given card types. Therefore, "Not a valid card type" should be printed as the output.</p>
+</div></div></section></div>
