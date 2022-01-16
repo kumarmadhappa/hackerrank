@@ -51,11 +51,9 @@ public class AmazonQ2 {
 		long imbalance = 0;
 		for (int count = 1; count < weight.size(); count++)
 		{
-			for (int startInd = 0, endInd = count; endInd < weight.size();)
+			for (int startInd = 0, endInd = count; endInd < weight.size();startInd++,endInd++)
 			{
 				imbalance = imbalance + weightDifference(weight, startInd, endInd);
-				startInd++;
-				endInd++;
 			}
 		}
 		return imbalance;
